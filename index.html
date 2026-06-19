@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-ok=1.0">
+    <title>3D 매직아이 퀴즈 정답소 | 세계 여행 상식 블로그</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background glowing shapes for premium visuals -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <header class="glass-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-eye-low-vision eye-logo"></i>
+                <span>Magic<span class="highlight">EYE</span> 퀴즈정답</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#" class="active"><i class="fa-solid fa-house"></i> 홈</a>
+                <a href="#about"><i class="fa-solid fa-circle-info"></i> 매직아이 보는 법</a>
+            </nav>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-sun icon-sun"></i>
+                <i class="fa-solid fa-moon icon-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero section with banner ads slot -->
+        <section class="hero-section">
+            <h1 class="hero-title">숨겨진 3D 국기를 찾아라!</h1>
+            <p class="hero-subtitle">매일 인스타그램에 업로드되는 3D 매직아이 퀴즈의 정답과 유익한 나라별 여행 정보 상식을 확인해 보세요.</p>
+            
+            <!-- AdSense Banner Top -->
+            <div class="adsense-slot ads-banner">
+                <span class="ads-label">ADVERTISEMENT</span>
+                <!-- Google AdSense Code Placeholder -->
+                <div class="ads-mock">구글 애드센스 광고 영역 (상단 배너)</div>
+            </div>
+        </section>
+
+        <!-- Dynamic Content Section -->
+        <section id="posts-section" class="posts-section">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-clock-rotate-left"></i> 최신 정답 목록</h2>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="국가 이름으로 검색...">
+                </div>
+            </div>
+            
+            <!-- Posts Grid (rendered by app.js) -->
+            <div id="posts-grid" class="posts-grid">
+                <div class="loading-spinner">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i> 포스팅을 불러오는 중...
+                </div>
+            </div>
+        </section>
+
+        <!-- Post Detail View overlay (initially hidden) -->
+        <article id="post-detail" class="post-detail glass-card hidden">
+            <button id="back-btn" class="back-btn"><i class="fa-solid fa-arrow-left"></i> 목록으로 돌아가기</button>
+            
+            <!-- AdSense Banner In-Post -->
+            <div class="adsense-slot ads-in-post">
+                <span class="ads-label">ADVERTISEMENT</span>
+                <div class="ads-mock">구글 애드센스 광고 영역 (본문 상단)</div>
+            </div>
+
+            <div id="post-content" class="post-content">
+                <!-- Loaded dynamically by app.js -->
+            </div>
+
+            <!-- AdSense Link Unit Bottom -->
+            <div class="adsense-slot ads-banner">
+                <span class="ads-label">ADVERTISEMENT</span>
+                <div class="ads-mock">구글 애드센스 광고 영역 (하단 배너)</div>
+            </div>
+        </article>
+
+        <!-- Educational About Section -->
+        <section id="about" class="about-section glass-card">
+            <h2>👁️ 3D 매직아이(스테레오그램) 보는 방법</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="step-num">01</div>
+                    <h3>평행법 (Parallel View)</h3>
+                    <p>눈의 초점을 모으지 않고 먼 곳을 바라보듯 멍하니 봅니다. 그림 뒤편 30cm 지점에 초점을 맞춘다고 생각하고 눈의 긴장을 푸는 것이 요령입니다.</p>
+                </div>
+                <div class="about-card">
+                    <div class="step-num">02</div>
+                    <h3>교차법 (Cross-eyed View)</h3>
+                    <p>눈동자를 의도적으로 사시처럼 안쪽으로 모아서 봅니다. 눈앞에 손가락을 두고 손가락을 보며 서서히 배경 그림으로 초점을 옮겨 보세요.</p>
+                </div>
+                <div class="about-card">
+                    <div class="step-num">03</div>
+                    <h3>입체감 느끼기</h3>
+                    <p>그림 속 자잘한 모래알 질감 패턴이 겹쳐 보이면서 특정 부분이 스윽 튀어나와 3D 입체 형상으로 보이기 시작합니다.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p>© 2026 MagicEYE 퀴즈정답소. All rights reserved.</p>
+        <p class="footer-sub">이 블로그는 100% 자동화 파이프라인으로 생성 및 배포되고 있습니다.</p>
+    </footer>
+
+    <!-- App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
