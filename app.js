@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hash Route Router
     function router() {
-        const hash = window.location.hash.substring(1);
+        const hash = decodeURIComponent(window.location.hash.substring(1));
         if (hash) {
             loadPostDetail(hash);
         } else {
